@@ -2,9 +2,20 @@
 
 This script automates the process of finding sequence numbers (seqno) associated with transaction IDs using the Coralogix DataPrime API.
 
+## Dependencies
+
+The script requires the following Python packages (see `requirements.txt`):
+- `requests` - For making HTTP API calls to Coralogix DataPrime
+- `python-dotenv` - For loading environment variables from .env file
+
 ## Setup
 
-1. **Set up your API key** (choose one method):
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Set up your API key** (choose one method):
 
    **Method 1: Use the setup script (recommended)**:
    ```bash
