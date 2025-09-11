@@ -38,13 +38,20 @@ The script requires the following Python packages (see `requirements.txt`):
    python automation.py
    ```
 
+3. Test if yourself! 
+   ```bash
+   TxId: 1e95933d-87ce-43f0-ac7b-5159cc887cbc
+   Tenant Id: 6cab8ebc-6d38-51dd-af3a-957481340cae
+   before: Sep 9, 2025, 3:29:08 AM
+   after: Sep 9, 2025, 4:29:08 AM
+   ```
+
+
 ## Changes Made
 
 ### Fixed Authentication Issues
-- Removed hardcoded API key for security
 - Added proper environment variable handling
 - Added both Bearer token and X-API-Key headers (Coralogix supports both)
-- Enabled SSL verification (removed `verify=False`)
 
 ### Enhanced Error Handling
 - Added detailed 403 Forbidden error messages
